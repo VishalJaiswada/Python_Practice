@@ -67,4 +67,23 @@ print(a)
 print(type(a))
 
 
+## Take Input in Python
+name = input("Enter User Name :")
+print("User Name is:",name)
+print(type(name))
+
+#It will always give the string at output
+#so to convert it int --> int() ,for float --> float() etc
+
+age =int(input("Enter your age :"))
+print("Age is:",age)
+print(type(age))
+
+# sum of two numbers input by users
+num1 =int (input("Enter first number :"))
+num2 =int (input("Enter second number :"))
+
+sum=num1+num2
+print("Sum of Two numbers :",sum)
+
 
