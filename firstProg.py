@@ -47,3 +47,24 @@ val1=True
 val2=False
 print("AND operator:", val1 and val2)
 print("OR Operator:", val1 or val2)
+
+#Type conversion
+a=2
+b=5.75
+
+#implicit conversion
+print(a+b)
+
+#explicit conversion
+a1="2"
+b1=7.75
+print(float(a1)+b1)
+
+#another example
+a=7
+a=str(a)
+print(a)
+print(type(a))
+
+
+
