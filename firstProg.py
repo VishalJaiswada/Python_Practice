@@ -205,14 +205,84 @@
 # function- To remove redundancy 
 
 #function definition
-def calcSum(x,y):  #parameters
-    sum=x+y
-    print("Sum of two numbers:",sum)
-    return sum
+# def calcSum(x,y):  #parameters
+#     sum=x+y
+#     print("Sum of two numbers:",sum)
+#     return sum
 
 
-a=int(input("Enter first number: "))
-b=int(input("Enter second number: "))
+# a=int(input("Enter first number: "))
+# b=int(input("Enter second number: "))
 
-calcSum(a,b) #function call ; argument passed
+# calcSum(a,b) #function call ; argument passed
 
+
+# function -> (1) Built-in Function (2)User defined function
+# 1) Built-in Function --> print(),len(),type(),range()
+#2) User defined function --> Created by user itself
+
+# Q) build function to print length and elements of a list
+
+# city=["Varanasi","Mirzapur","Prayagraj","Noida","Ghaziabaad"]
+# members=["Satyanarayan","Shivkumari","Priti","Vikas","Vishal"]
+
+# def list_len(list):
+#     print("length of list: ",len(list))
+
+# def print_elements(list):
+#     for i in list:
+#         print(i,end=" ")
+
+# list_len(city)
+# print_elements(city)
+# print("\n")
+# list_len(members)
+# print_elements(members)
+
+#recursion in python
+
+# Printing Natural Numbers reverse order1-->n
+# def natural(n):
+#     if(n==0):
+#         return
+#     print(n)
+#     natural(n-1)
+
+# num = int(input("Enter the numbers: "))
+# natural(num)
+
+# Questions--> factorail of a number using recursion
+
+# def factorial(num):
+#     if(num==0 or num==1):
+#         return 1
+#     else:
+#         return num*factorial(num-1)
+
+# num =int(input("Enter the number: "))
+# print("Factorial of a number: ",factorial(num))
+
+
+#Questions --> Write a recursive function to calculate the sum of first n natural numbers.
+
+# def sumOfNatural(num):
+#     if(num==0):
+#         return 0
+#     else:
+#         return num + sumOfNatural(num-1)
+
+# n = int(input("Enter a number: "))
+# print("Sum of Natural Number: ",sumOfNatural(n))
+
+
+#Question --> Write a recursive function to print all elements in a list.
+def print_Element(list,i):
+    if i==len(list):
+        return
+    else:
+        print(list[i],end=" ")
+        print_Element(list,i+1)
+
+# list = [1,2,3,4,5,6,7,8,9]
+list = ["Mango","Apple","Banana","Grapes","Litchi"]
+print_Element(list,0)
