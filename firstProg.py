@@ -289,6 +289,3 @@
 # print_Element(list,0)
 
 
-# File I/O in python
-
-
