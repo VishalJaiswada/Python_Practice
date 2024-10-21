@@ -191,16 +191,28 @@
 # Question--> Factotial of a number using for loop
 #by default range(n) ,range(1,n) or range(init,maxsize,stepsize)-->range(1,n,1)
 
-x = int(input("Enter the numbers:"))
-fact=1
+# x = int(input("Enter the numbers:"))
+# fact=1
 
-for i in range(1,x+1):
-    fact*=i
+# for i in range(1,x+1):
+#     fact*=i
 
-print("Factorial of",x,":",fact)
-
-
+# print("Factorial of",x,":",fact)
 
 
 
+# Lec-6 --> Function & Recursion
+# function- To remove redundancy 
+
+#function definition
+def calcSum(x,y):  #parameters
+    sum=x+y
+    print("Sum of two numbers:",sum)
+    return sum
+
+
+a=int(input("Enter first number: "))
+b=int(input("Enter second number: "))
+
+calcSum(a,b) #function call ; argument passed
 
