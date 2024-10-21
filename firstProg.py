@@ -276,13 +276,19 @@
 
 
 #Question --> Write a recursive function to print all elements in a list.
-def print_Element(list,i):
-    if i==len(list):
-        return
-    else:
-        print(list[i],end=" ")
-        print_Element(list,i+1)
 
-# list = [1,2,3,4,5,6,7,8,9]
-list = ["Mango","Apple","Banana","Grapes","Litchi"]
-print_Element(list,0)
+# def print_Element(list,i):
+#     if i==len(list):
+#         return
+#     else:
+#         print(list[i],end=" ")
+#         print_Element(list,i+1)
+
+# # list = [1,2,3,4,5,6,7,8,9]
+# list = ["Mango","Apple","Banana","Grapes","Litchi"]
+# print_Element(list,0)
+
+
+# File I/O in python
+
+
