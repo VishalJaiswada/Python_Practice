@@ -8,3 +8,35 @@
 #### >> High Level Language
 #### >> Developed by Guido van Rossum
 #### >> Portable 
+
+
+## Lec-7 (File innput/output):-
+
+#### Types of files -->
+#### 1) Text files: .txt , .docx , .log etc
+#### 2) Binary files: .jpg , .png , .mp4 ,.mov etc
+
+#### operations are performed on the file system-->
+#### Open , read & close File 
+
+#### f= open("file_name","mode")
+####           |           |
+####          sample.txt   r:read Mode ,w: write mode
+####          demo.docx    
+
+
+## Example of File I/O :-
+#### f=open("fileI_O.txt","r")
+#### data=f.read()
+#### print(data)
+#### print(type(data))
+#### f.close()
+
+## Character                       Meaning
+#### 'r'                ->        open for reading
+#### 'w'                ->        open for writing , truncating the file first
+#### 'x'                ->        create a new file and open it for writing
+#### 'a'                ->        open for writing,appending to the end of the file if it exists 
+#### 'b'                ->        binary mode
+#### 't'                ->        text mode (default)
+#### '+'                ->        open a disk file for updating (reading and writing)
