@@ -12,3 +12,9 @@
 #           sample.txt   r:read Mode ,w: write mode
 #           demo.docx    
 
+## Coding Example
+
+f=open("fileI_O.txt","r")
+data=f.read()
+print(data)
+print(type(data))
