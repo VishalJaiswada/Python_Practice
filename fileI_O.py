@@ -25,18 +25,26 @@
 # print(data)
 #f.close()
 
-f=open("fileI_O.txt","r")
-line1=f.readline() #read specified line 
-print(line1)
+# f=open("fileI_O.txt","r")
+# line1=f.readline() #read specified line 
+# print(line1)
 
-line2=f.readline() #read specified line
-print(line2)
+# line2=f.readline() #read specified line
+# print(line2)
 
-line3=f.readline() #read specified line
-print(line3)
+# line3=f.readline() #read specified line
+# print(line3)
 
-line4=f.readline() #read specified line
-print(line4)
+# line4=f.readline() #read specified line
+# print(line4)
 
-f.close()
- 
+# f.close()
+
+# write command
+
+# "w" --> write into the file and overwrite previous contents
+# "a" --> write at the end of the file and don't overwrite the contents
+f=open("fileI_O.txt", "a");
+f.write("\n Then learn NodeJS and MongoDB for Backend !");
+
+f.close();
