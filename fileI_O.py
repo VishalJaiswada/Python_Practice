@@ -70,3 +70,11 @@
 # w+ -> read+overwrite (ptr start) - truncate
 # a+ -> read+append (ptr end)      - no truncate
 
+# with Syntax :
+# ______________________
+
+# with open("fileI_O.txt","r") as f:
+#     data=f.read()
+#     print(data)
+#     print(type(data))
+
