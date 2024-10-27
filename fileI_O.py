@@ -44,7 +44,29 @@
 
 # "w" --> write into the file and overwrite previous contents
 # "a" --> write at the end of the file and don't overwrite the contents
-f=open("fileI_O.txt", "a");
-f.write("\n Then learn NodeJS and MongoDB for Backend !");
 
-f.close();
+# f=open("fileI_O.txt", "a");
+# f.write("\n Then learn NodeJS and MongoDB for Backend !");
+
+# f.close();
+
+# f=open("Demo.txt","r+")
+# # r+ = used for read and write operations
+# # f.write("r+ is used for read and also write")
+# print(f.read())
+# f.close()
+
+# f=open("Demo.txt","w+")
+# print(f.read())
+# # f.write("abc")
+# f.close()
+
+# f=open("Demo.txt","a+")
+# print(f.read())
+# f.write("abc2")
+# f.close()
+
+# r+ -> read+overwrite (ptr start) - no truncate
+# w+ -> read+overwrite (ptr start) - truncate
+# a+ -> read+append (ptr end)      - no truncate
+
