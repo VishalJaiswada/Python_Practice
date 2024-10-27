@@ -40,3 +40,15 @@
 #### 'b'                ->        binary mode
 #### 't'                ->        text mode (default)
 #### '+'                ->        open a disk file for updating (reading and writing)
+
+## To install any package :
+#### write -> pip install packagename
+#### eg:- pip install tensorflow
+
+## Deleting a File :
+### Using the os module
+##### Module (like a code library) is a file written by another programmer that generally has a function we can use.
+
+##### import os
+##### os.remove(filename)
+##### Eg: os.remove("Demo.txt")
