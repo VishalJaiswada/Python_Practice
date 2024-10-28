@@ -53,6 +53,8 @@
 ##### os.remove(filename)
 ##### Eg: os.remove("Demo.txt")
 
+## OOPs Concept Lec-8:
+#### To map with real world scenarios , we started using objects in code. This is called OOP. To reduce redundancy and increase reusability 
 
 ### References --> Shradha Khapra (Youtube Channel & Notes) of Python:
 
