@@ -55,23 +55,53 @@
 
 # Practice Question
 
-class Student:
-    def __init__(self,name,marks1,marks2,marks3):
-        self.name=name
-        self.marks1=marks1
-        self.marks2=marks2
-        self.marks3=marks3
+# class Student:
+#     def __init__(self,name,marks1,marks2,marks3):
+#         self.name=name
+#         self.marks1=marks1
+#         self.marks2=marks2
+#         self.marks3=marks3
     
-    def calculate_average(self):
-        return (self.marks1+self.marks2+self.marks3)/3
+#     def calculate_average(self):
+#         return (self.marks1+self.marks2+self.marks3)/3
     
-    def get_highest_marks(self):
-        return max(self.marks1,self.marks2,self.marks3)
+#     def get_highest_marks(self):
+#         return max(self.marks1,self.marks2,self.marks3)
 
-s1=Student("Vishal Jaiswada",95,87,92)
+# s1=Student("Vishal Jaiswada",95,87,92)
 
-print("Name:",s1.name)
+# print("Name:",s1.name)
 
-print("Average Marks:",s1.calculate_average())
+# print("Average Marks:",s1.calculate_average())
 
-print("Highest Marks:",s1.get_highest_marks())
+# print("Highest Marks:",s1.get_highest_marks())
+
+# Static Methods :
+# Methods that don't use the self parameter (work at class level)
+# use @staticmethod in class
+
+# class Student:
+#     @staticmethod  #decorator
+#     def college():
+#         print("G L Bajaj ITM , Greater Noida")
+
+# s1=Student()
+# s1.college()
+
+# OOPs Pillar => 4 types (Abstraction , Encapsulation , Inheritance , Polymorphism)
+
+# Abstraction: Hiding Unnecessary details about class
+
+class Car:
+    def __init__(self):
+        self.clutch = False
+        self.accelerator = False
+        self.brk = False
+    
+    def start(self):
+        self.clutch = True
+        self.accelerator = True
+        print("Car Started...")
+
+car1=Car()
+car1.start()
