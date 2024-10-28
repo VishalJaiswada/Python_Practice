@@ -52,3 +52,26 @@
 
 # s2=Student("Vikas Patel","002",97)
 # print(s2.fullname,",Roll No.:",s2.rollno,",Marks:",s2.get_marks())
+
+# Practice Question
+
+class Student:
+    def __init__(self,name,marks1,marks2,marks3):
+        self.name=name
+        self.marks1=marks1
+        self.marks2=marks2
+        self.marks3=marks3
+    
+    def calculate_average(self):
+        return (self.marks1+self.marks2+self.marks3)/3
+    
+    def get_highest_marks(self):
+        return max(self.marks1,self.marks2,self.marks3)
+
+s1=Student("Vishal Jaiswada",95,87,92)
+
+print("Name:",s1.name)
+
+print("Average Marks:",s1.calculate_average())
+
+print("Highest Marks:",s1.get_highest_marks())
