@@ -109,3 +109,31 @@
 #2 Encapsulation: Hiding data and methods inside a class, making it secure and private
 #Wrapping data and function into a single unit(object).
 
+class Account:
+    def __init__(self,bal,acc):
+        self.balance=bal
+        self.account_no=acc
+    
+    def debit(self,amount):
+        if amount>self.balance:
+            print("Insufficient Balance")
+        else:
+            self.balance-=amount
+            print("Rs.",amount,"was Debited Successful")
+            print("Total balance = ",self.get_balance())
+    def credit(self,amount):
+        self.balance+=amount
+        print("Rs.",amount,"was Credited Successful")
+        print("Total balance = ",self.get_balance())
+    def get_balance(self):
+        return self.balance
+
+acc1=Account(10000,123456)
+
+acc1.credit(5000)
+
+acc1.debit(4000)
+
+acc1.credit(50000)
+
+acc1.debit(15000)
