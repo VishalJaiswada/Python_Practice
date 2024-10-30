@@ -90,18 +90,22 @@
 
 # OOPs Pillar => 4 types (Abstraction , Encapsulation , Inheritance , Polymorphism)
 
-# Abstraction: Hiding Unnecessary details about class
+#1 Abstraction: Hiding Unnecessary details about class data and methods
 
-class Car:
-    def __init__(self):
-        self.clutch = False
-        self.accelerator = False
-        self.brk = False
+# class Car:
+#     def __init__(self):
+#         self.clutch = False
+#         self.accelerator = False
+#         self.brk = False
     
-    def start(self):
-        self.clutch = True
-        self.accelerator = True
-        print("Car Started...")
+#     def start(self):
+#         self.clutch = True
+#         self.accelerator = True
+#         print("Car Started...")
 
-car1=Car()
-car1.start()
+# car1=Car()
+# car1.start()
+
+#2 Encapsulation: Hiding data and methods inside a class, making it secure and private
+#Wrapping data and function into a single unit(object).
+
